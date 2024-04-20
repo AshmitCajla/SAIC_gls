@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./0_landingpage.css";
-import Bg from "./assets/3.jpg";
-import Game_night from "./Assets/Game_night.jpg";
-import PanelDiscussion from "./Assets/PanelDiscussion.jpg";
-import StarNight from "./Assets/StarNight.jpg";
+import Bg from "./Assets/BG_SAIC.jpg";
+import Game_night from "./Assets/BG_GN.jpg";
+import PanelDiscussion from "./Assets/BG_AP.jpg";
+import StarNight from "./Assets/BG_SN.jpg";
 import Navbar from "./0_1_Navbar";
 
 const Carousel = () => {

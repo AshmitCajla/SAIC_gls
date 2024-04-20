@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from './0_1_Navbar';
-import "./1_Registrationform.css";
+import "./1_Registration_form.css";
 
 const backendURL = "http://localhost:3000/submitFormData";
 
