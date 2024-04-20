@@ -1,0 +1,49 @@
+header {
+    padding: 10px 20px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: start;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #eee;
+    transition: text-shadow 0.3s ease;
+  }
+  
+  /* Hover glow effect */
+  a:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #228DFF, 0 0 50px #228DFF, 0 0 60px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF;
+  }
+  
+  .social-links {
+    display: flex;
+    align-items: start;
+    gap: 0;
+  }
+  
+  .social-links a {
+    font-size: 1.2rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 0px 0;
+      margin-left: 0%;
+    }
+  
+  
+    nav {
+      align-items: start;
+    }
+  
+    .social-links {
+      margin-top: 10px;
+    }
+  
+    .social-links a {
+      font-size: 1rem;
+    }
+  }
