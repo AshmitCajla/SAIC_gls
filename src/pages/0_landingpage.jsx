@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./0_landingpage.css";
-import Bg from "./Assets/3.svg";
-import Game_night from "./Assets/Game_night.svg";
+import Bg from "./assets/3.jpg";
+import Game_night from "./Assets/Game_night.jpg";
 import PanelDiscussion from "./Assets/PanelDiscussion.jpg";
-import StarNight from "./Assets/StarNight.png";
-import Navbar from "./Navbar";
+import StarNight from "./Assets/StarNight.jpg";
+import Navbar from "./0_1_Navbar";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
