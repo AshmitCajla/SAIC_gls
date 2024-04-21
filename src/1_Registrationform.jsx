@@ -42,28 +42,29 @@ const RegistrationForm = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
-  
-      setFormData({
-        // Reset form data after submission
-        team_name: "",
-        Leader_name: "",
-        Leader_Phone_number: "",
-        Leader_email: "",
-        Leader_roll_number: "",
-        Member_1_name: "",
-        Member_1_Phone_number: "",
-        Member_1_Email: "",
-        Member_1_Roll_number: "",
-        Member_2_Name: "",
-        Member_2_Phone_number: "",
-        Member_2_Email: "",
-        Member_2_Roll_number: "",
-        Member_3_Name: "",
-        Member_3_Phone_number: "",
-        Member_3_Email: "",
-        Member_3_Roll_number: "",
-      });
-      setCurrentPage(1);
+
+  if(res){
+    setFormData({
+    team_name: "",
+    Leader_name: "",
+    Leader_Phone_number: "",
+    Leader_email: "",
+    Leader_roll_number: "",
+    Member_1_name: "",
+    Member_1_Phone_number: "",
+    Member_1_Email: "",
+    Member_1_Roll_number: "",
+    Member_2_Name: "",
+    Member_2_Phone_number: "",
+    Member_2_Email: "",
+    Member_2_Roll_number: "",
+    Member_3_Name: "",
+    Member_3_Phone_number: "",
+    Member_3_Email: "",
+    Member_3_Roll_number: "",
+  });
+  alert("Form Submitted Successfully. Thank you for registering");  
+  setCurrentPage(1);}
     } catch (error) {
       console.error("Error submitting form:", error.message);
     }
@@ -99,7 +100,7 @@ const RegistrationForm = () => {
       handleInputChange={handleInputChange}
     />,
   ];
-
+  
   return (
     <>
       <Navbar />

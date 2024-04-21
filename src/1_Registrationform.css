@@ -4,6 +4,12 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
 
 body {
   background-size: cover;

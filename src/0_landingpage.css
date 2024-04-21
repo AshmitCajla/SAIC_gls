@@ -204,6 +204,7 @@ header a {
 
 .carousel .list .item:nth-child(1) .content .des {
   animation-delay: 1.6s !important;
+  font-weight: bold;
 }
 
 .carousel .list .item:nth-child(1) .content .buttons {
