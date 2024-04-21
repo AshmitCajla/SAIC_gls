@@ -1,9 +1,9 @@
 import React from 'react';
 import { Fragment } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Carousel from './pages/0_landingpage';
-import RegisterForm from  './pages/1_Registration_form';
-import ComingSoon from './pages/2_comingsoon';
+import Carousel from './0_landingpage';
+import RegisterForm from  './1_Registrationform';
+import ComingSoon from './2_comingsoon';
 
 function App() {
   return (

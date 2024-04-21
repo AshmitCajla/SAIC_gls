@@ -1,16 +1,13 @@
 import React from 'react';
-import './0_1_Navbar.css';
+import './Navbar.css';
+import Logo from './Assets/gls_logo_white.png';
 
 function Navbar() {
   return (
     <header>
       <nav>
         <a href="/">
-          <img src="https://your-logo-image-url.com" alt="Your Company Logo" />
-          <style>
-            margin-left: 0%;
-            Margin-top : 1px;
-          </style>
+          <img src={Logo} alt="Your Company Logo" className="logo" />     
         </a>
         <div className="social-links">
           <a href="https://www.facebook.com/SAIC.Thapar/">

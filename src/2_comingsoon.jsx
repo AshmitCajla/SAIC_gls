@@ -1,6 +1,6 @@
 import React from 'react';
 import './2_comingsoon.css';
-import Navbar from './0_1_Navbar';
+import Navbar from './Navbar';
 
 function ComingSoon() {
   return (

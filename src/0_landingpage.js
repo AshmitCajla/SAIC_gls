@@ -3,8 +3,8 @@ import "./0_landingpage.css";
 import Bg from "./Assets/BG_SAIC.jpg";
 import Game_night from "./Assets/BG_GN.jpg";
 import PanelDiscussion from "./Assets/BG_AP.jpg";
-import StarNight from "./Assets/BG_SN.jpg";
-import Navbar from "./0_1_Navbar";
+import StarNight from "./Assets/BG_SN.png";
+import Navbar from "./Navbar";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -81,10 +81,10 @@ const Carousel = () => {
           be etched in your hearts forever. Join us to unleash your
           competitive spirit and immerse yourself in a night you will never
           forget. Let the games begin!"
-          Button1="Register Now!"
-          Button1_redirect="/Register"
-          Button2="Rule Book"
-          Button2_redirect="https://example.com/subscribe"
+          seeMoreText="Register Now!"
+          seeMoreLink="/Register"
+          subscribeText="Rule Book"
+          subscribeLink="https://example.com/subscribe"
         />
         <CarouselItem
           src={PanelDiscussion}
@@ -93,10 +93,10 @@ const Carousel = () => {
           topic="Alumni Panel"
           description="We are thrilled to announce the participation of our prestigious
           alumni panel for our upcoming event - Global Leadership Summit."
-          Button1="Meet the Panelists"
-          Button1_redirect="/Know_the_Alumni"
-          Button2=""
-          Button2_redirect="https://example.com/subscribe"
+          seeMoreText="Meet the Panelists"
+          seeMoreLink="/Know_the_Alumni"
+          subscribeText=""
+          subscribeLink="https://example.com/subscribe"
         />
         <CarouselItem
           src={StarNight}
@@ -106,10 +106,10 @@ const Carousel = () => {
           description="Get ready for a night of glitz and glamour as we welcome our 
           special guest for an unforgettable evening. Celebrate the achievements of our
           community and be inspired by their stories"
-          Button1="Know the Star"
-          Button1_redirect="/Know_the_Star"
-          Button2=""
-          Button2_redirect="https://example.com/subscribe"
+          seeMoreText="Know the Star"
+          seeMoreLink="/Know_the_Star"
+          subscribeText=""
+          subscribeLink="https://example.com/subscribe"
         />
       </div>
       <div className="thumbnail">
@@ -160,10 +160,10 @@ const CarouselItem = ({
   title,
   topic,
   description,
-  Button1,
-  Button1_redirect,
-  Button2,
-  Button2_redirect,
+  seeMoreText,
+  seeMoreLink,
+  subscribeText,
+  subscribeLink,
 }) => (
   <div className="item">
     <img src={src} alt={title} />
@@ -173,8 +173,8 @@ const CarouselItem = ({
       <div className="topic">{topic}</div>
       <div className="des">{description}</div>
       <div className="buttons">
-        {Button1_redirect && (
-          <a href={Button1_redirect} target="" rel="noopener noreferrer">
+        {seeMoreLink && (
+          <a href={seeMoreLink} target="" rel="noopener noreferrer">
             <button
               style={{
                 backgroundColor: "#eee",
@@ -190,13 +190,13 @@ const CarouselItem = ({
                 transition: "background-color 0.3s",
               }}
             >
-              {Button1}
+              {seeMoreText}
             </button>
           </a>
         )}
 
-        {Button2 && (
-          <a href={Button2_redirect} target="_blank" rel="noopener noreferrer">
+        {subscribeText && (
+          <a href={subscribeLink} target="_blank" rel="noopener noreferrer">
             <button
               style={{
                 backgroundColor: "transparent",
@@ -212,7 +212,7 @@ const CarouselItem = ({
                 transition: "background-color 0.3s, color 0.3s",
               }}
             >
-              {Button2}
+              {subscribeText}
             </button>
           </a>
         )}
